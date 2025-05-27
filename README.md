@@ -65,8 +65,8 @@ A modern job search application built with Next.js 14, Tailwind CSS, and Express
 
 ### Authentication
 
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login and receive JWT token
-- `GET /api/auth/profile` - Get user profile (protected)
-- `PUT /api/auth/profile` - Update user profile (protected)
+- `POST /api/register` - Register a new user
+- `POST /api/login` - Login and receive JWT token
+- `GET /api/profile/id` - Get user profile (protected)
+- `PUT /api/profile/id` - Update user profile (protected)
 
