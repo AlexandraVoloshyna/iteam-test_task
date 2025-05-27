@@ -1,0 +1,17 @@
+{
+  "name": "iteam_test-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev:frontend": "cd client && npm run dev",
+    "dev:backend": "cd server && npm run dev",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build": "cd src && npm run build",
+    "start": "cd src && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
