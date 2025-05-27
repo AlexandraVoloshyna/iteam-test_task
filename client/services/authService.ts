@@ -10,7 +10,7 @@ interface AuthResponse {
 
 export const register = async (email: string, password: string, name: string): Promise<AuthResponse> => {
   try {
-    const response = await backendApi.post('/auth/register', {
+    const response = await backendApi.post('/register', {
       email,
       password,
       name
@@ -29,7 +29,7 @@ export const register = async (email: string, password: string, name: string): P
 
 export const login = async (email: string, password: string): Promise<AuthResponse> => {
   try {
-    const response = await backendApi.post('/auth/login', {
+    const response = await backendApi.post('/login', {
       email,
       password
     });
